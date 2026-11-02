@@ -1,4 +1,4 @@
-# 好位 · 一次性邀请抽签（v2，待部署后端）
+# 好位 · 一次性邀请抽签（v2）
 
 本版本替代旧版「预先填写五人名单、预分配结果」流程。
 
@@ -16,7 +16,7 @@
 ## 结构
 
 - `index.html` / `style.css` / `app.js`：GitHub Pages 静态前端。
-- `config.js`：后端部署成功后填入 Worker 的 HTTPS 地址，目前留空，确保不会回退到浏览器本地抽签。
+- `config.js`：后端部署成功后填入 Worker 的 HTTPS 地址，已配置线上 API，不回退到浏览器本地抽签。
 - `backend/worker.mjs`：无 npm 运行时依赖的 Cloudflare Worker。
 - `backend/schema.sql`：D1 表结构及唯一约束。
 - `backend/wrangler.jsonc`：CLI 部署模板，数据库 ID 必须替换为实际创建的值。
@@ -46,4 +46,4 @@
 - 跨轮邀请、错误管理凭证、错误来源请求被拒绝。
 - 另外 15 轮并发抽取无重复。
 
-生产 Cloudflare 验证和浏览器交互验证尚待后端部署完成。
+Cloudflare 后端已部署，绑定数据库已创建。上线时还需在浏览器验证正式流程。
