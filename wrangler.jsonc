@@ -1,0 +1,11 @@
+{
+  "name": "good-seat-lottery-api",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-02",
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "good-seat-lottery",
+    "database_id": "REPLACE_WITH_CREATED_D1_DATABASE_ID"
+  }],
+  "vars": { "FRONTEND_ORIGIN": "https://mengzhen88.github.io" }
+}
